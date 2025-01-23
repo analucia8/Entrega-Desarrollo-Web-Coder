@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  background-color: antiquewhite;
+  font-family: "Noto Sans", sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+body .estilos-titulos, body h2, body h1 {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  color: #00695c;
+}
+body h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  padding: 10px;
+  text-transform: uppercase; /*Mayúsculas*/
+  letter-spacing: 2px; /* Añade espaciado entre letras */
+  border-bottom: 2px solid #ccc; /* Línea inferior decorativa */
+}
+body h2 {
+  margin-bottom: 20px;
+}
+body p {
+  color: rgb(224, 167, 110);
+}
+body footer {
+  color: grey !important;
+  margin-top: 40px !important;
+  border-top: 2px solid #ccc !important;
+  padding-top: 20px !important;
+  font-size: 0.75rem !important;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,38 @@
+$primary-color: antiquewhite;
+$secondary-color: #00695c;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    background-color: $primary-color;
+    font-family: "Noto Sans", sans-serif;
+    a {
+        text-decoration: none;
+    }
+    .estilos-titulos {
+        font-weight: bold;
+        text-align: center;
+        margin-top: 30px;
+        color: $secondary-color;
+    }
+    h1 { @extend .estilos-titulos;
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        padding: 10px;
+        text-transform: uppercase; /*Mayúsculas*/
+        letter-spacing: 2px; /* Añade espaciado entre letras */
+        border-bottom: 2px solid #ccc; /* Línea inferior decorativa */
+    }
+    h2 {
+        @extend .estilos-titulos;
+        margin-bottom: 20px;
+        }
+    p {
+            color: rgb(224, 167, 110)
+        }
+    footer {
+            color: grey !important;
+            margin-top: 40px !important;
+            border-top: 2px solid #ccc !important;
+            padding-top: 20px !important;
+            font-size: 0.75rem !important;
+        }
+}
