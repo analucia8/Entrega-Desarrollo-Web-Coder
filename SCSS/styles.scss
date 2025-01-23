@@ -1,6 +1,14 @@
 $primary-color: antiquewhite;
 $secondary-color: #00695c;
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'navybanner';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
 body {
     background-color: $primary-color;
     font-family: "Noto Sans", sans-serif;
@@ -11,7 +19,7 @@ body {
         font-weight: bold;
         text-align: center;
         margin-top: 30px;
-        color: $secondary-color;
+        color: $secondary-color !important;
     }
     h1 { @extend .estilos-titulos;
         font-size: 2.5rem;
@@ -35,4 +43,14 @@ body {
             padding-top: 20px !important;
             font-size: 0.75rem !important;
         }
+}
+
+/*pagina productos*/
+.boton-productos {
+    position: fixed !important; 
+    top: 5px !important;     
+    left: 10px !important;
+a {
+  color: white;
+}
 }

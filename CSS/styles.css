@@ -1,5 +1,70 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+nav {
+  background-color: #004d40; /* Color de fondo del menú */
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra debajo del menú */
+}
+
+#listanavegacion {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+#listanavegacion a {
+  color: antiquewhite;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: all 0.3s ease; /* Suaviza las transiciones */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+#listanavegacion a:hover {
+  background-color: #00695c; /* Color al pasar el mouse */
+  color: #ffffff; /* Color del texto al pasar el mouse */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra adicional al pasar el mouse */
+}
+
+#listanavegacion a:active {
+  background-color: #00332e; /* Color al hacer clic */
+}
+
+/*Estilo imagen del banner*/
+.banner-img {
+  height: 50vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.banner-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*Estilos para dispositivos móviles lista de navegación*/
+@media (max-width: 768px) {
+  #listanavegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #listanavegacion a {
+    font-size: 15px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: antiquewhite;
   font-family: "Noto Sans", sans-serif;
@@ -11,7 +76,7 @@ body .estilos-titulos, body h2, body h1 {
   font-weight: bold;
   text-align: center;
   margin-top: 30px;
-  color: #00695c;
+  color: #00695c !important;
 }
 body h1 {
   font-size: 2.5rem;
@@ -33,6 +98,16 @@ body footer {
   border-top: 2px solid #ccc !important;
   padding-top: 20px !important;
   font-size: 0.75rem !important;
+}
+
+/*pagina productos*/
+.boton-productos {
+  position: fixed !important;
+  top: 5px !important;
+  left: 10px !important;
+}
+.boton-productos a {
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

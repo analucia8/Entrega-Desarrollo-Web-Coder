@@ -1,0 +1,54 @@
+nav {
+    background-color: #004d40; /* Color de fondo del menú */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra debajo del menú */
+  }
+  
+  #listanavegacion {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los elementos */
+  }
+  #listanavegacion a {
+    color: antiquewhite;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: all 0.3s ease; /* Suaviza las transiciones */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  #listanavegacion a:hover {
+    background-color: #00695c; /* Color al pasar el mouse */
+    color: #ffffff; /* Color del texto al pasar el mouse */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra adicional al pasar el mouse */
+  }
+  #listanavegacion a:active {
+    background-color: #00332e; /* Color al hacer clic */
+  }
+  
+  /*Estilo imagen del banner*/
+  .banner-img {
+    height: 50vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  .banner-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  /*Estilos para dispositivos móviles lista de navegación*/
+@media (max-width: 768px) {
+    #listanavegacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    #listanavegacion a {
+        font-size: 15px;
+    }
+}
