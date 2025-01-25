@@ -111,6 +111,20 @@ nav {
     padding: 5px;
   }
 }
+.estilo-terminos-y-condiciones p {
+  color: rgb(224, 167, 110);
+  margin: 10px 0;
+  font-size: 16px; /* Tamaño estándar para ambos */
+  line-height: 1.5; /* Espaciado entre líneas */
+}
+.estilo-terminos-y-condiciones li {
+  color: gray;
+  margin: 20px 0;
+  font-size: 16px; /* Tamaño estándar para ambos */
+  line-height: 1.5; /* Espaciado entre líneas */
+  list-style-position: inside; /* Asegura que los números estén dentro del contenedor */
+}
+
 * {
   margin: 0;
   padding: 0;
