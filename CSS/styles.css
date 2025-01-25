@@ -67,7 +67,6 @@ nav {
   column-gap: 10px;
   row-gap: 20px;
   padding: 0 30px;
-  background-color: antiquewhite;
 }
 .contenidoProductosGrid img {
   width: 100%;
@@ -111,6 +110,20 @@ nav {
     padding: 5px;
   }
 }
+.estilo-terminos-y-condiciones p {
+  color: rgb(224, 167, 110);
+  margin: 10px 0;
+  font-size: 16px; /* Tamaño estándar para ambos */
+  line-height: 1.5; /* Espaciado entre líneas */
+}
+.estilo-terminos-y-condiciones li {
+  color: gray;
+  margin: 20px 0;
+  font-size: 16px; /* Tamaño estándar para ambos */
+  line-height: 1.5; /* Espaciado entre líneas */
+  list-style-position: inside; /* Asegura que los números estén dentro del contenedor */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -118,7 +131,7 @@ nav {
 }
 
 body {
-  background-color: antiquewhite;
+  background-image: linear-gradient(to bottom, antiquewhite, white);
   font-family: "Noto Sans", sans-serif;
 }
 body a {
