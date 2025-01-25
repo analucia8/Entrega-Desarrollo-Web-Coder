@@ -67,7 +67,6 @@ nav {
   column-gap: 10px;
   row-gap: 20px;
   padding: 0 30px;
-  background-color: antiquewhite;
 }
 .contenidoProductosGrid img {
   width: 100%;
@@ -118,7 +117,7 @@ nav {
 }
 
 body {
-  background-color: antiquewhite;
+  background-image: linear-gradient(to bottom, antiquewhite, white);
   font-family: "Noto Sans", sans-serif;
 }
 body a {
