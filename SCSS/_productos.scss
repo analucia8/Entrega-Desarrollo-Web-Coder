@@ -13,6 +13,9 @@
         object-fit: cover; /* Mantiene proporciones sin deformar */
         display: block;
         border-radius: 10px;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 }
 

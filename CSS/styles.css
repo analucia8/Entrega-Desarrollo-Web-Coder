@@ -73,6 +73,9 @@ nav {
   display: block;
   border-radius: 10px;
 }
+.contenidoProductosGrid img:hover {
+  transform: scale(1.2);
+}
 
 /* Descripciones */
 .itemGridProductos h2 {
