@@ -112,15 +112,6 @@ a {
 }
 
 
-.form-control {
-    background-color: rgba(240, 248, 255, 0.909);
-}
-
-.form-select {
-    background-color: rgba(240, 248, 255, 0.909);
-}
-
-
 @media (max-width: 952px) {
     .containerProductosDestacados {
         display: none;
@@ -158,8 +149,16 @@ a {
 }
 
 /* estilo formulario*/
+.form-control, .form-select {
+    max-width: 100%; /* Asegura que no desborde el contenedor */
+    width: 100%;     /* Garantiza que se ajuste al ancho disponible */
+    margin: auto;    /* Centra el formulario si es necesario */
+    background-color: rgba(240, 248, 255, 0.909);
+}
+
 .form-floating {
     padding: 10px;
+
 
 &:hover {
     background-color: white;

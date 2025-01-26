@@ -11,8 +11,8 @@ nav {
   display: flex;
   justify-content: center;
   gap: 20px; /* Espacio entre los elementos */
+  white-space: nowrap;
 }
-
 #listanavegacion a {
   color: antiquewhite;
   font-size: 18px;
@@ -21,13 +21,11 @@ nav {
   transition: all 0.3s ease; /* Suaviza las transiciones */
   border-radius: 5px; /* Bordes redondeados */
 }
-
 #listanavegacion a:hover {
   background-color: #00695c; /* Color al pasar el mouse */
   color: #ffffff; /* Color del texto al pasar el mouse */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra adicional al pasar el mouse */
 }
-
 #listanavegacion a:active {
   background-color: #00332e; /* Color al hacer clic */
 }
@@ -38,7 +36,6 @@ nav {
   width: 100vw;
   overflow: hidden;
 }
-
 .banner-img img {
   height: 100%;
   width: 100vw;
@@ -47,16 +44,17 @@ nav {
 }
 
 /*Estilos para dispositivos móviles lista de navegación*/
-@media (max-width: 768px) {
+@media (max-width: 840px) {
   #listanavegacion {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 840px) and (max-width: 962px) {
   #listanavegacion a {
     font-size: 15px;
+    gap: 10px;
   }
 }
 /* Diseño para escritorio */
@@ -221,14 +219,6 @@ body footer {
   border-radius: 10px;
 }
 
-.form-control {
-  background-color: rgba(240, 248, 255, 0.909);
-}
-
-.form-select {
-  background-color: rgba(240, 248, 255, 0.909);
-}
-
 @media (max-width: 952px) {
   .containerProductosDestacados {
     display: none;
@@ -264,6 +254,13 @@ body footer {
 }
 
 /* estilo formulario*/
+.form-control, .form-select {
+  max-width: 100%; /* Asegura que no desborde el contenedor */
+  width: 100%; /* Garantiza que se ajuste al ancho disponible */
+  margin: auto; /* Centra el formulario si es necesario */
+  background-color: rgba(240, 248, 255, 0.909);
+}
+
 .form-floating {
   padding: 10px;
 }
