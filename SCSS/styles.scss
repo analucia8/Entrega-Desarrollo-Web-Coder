@@ -59,24 +59,28 @@ a {
 }
 }
 
+/* págino quienes somos */
 #texto-quienes-somos {
     margin: 20px;
     text-align: justify;
 
 }
 
+#contenedor-quienes-somos {
+    justify-content: center;
+    iframe {
+        width: 80%; /* El iframe se ajustará al ancho del contenedor */
+        height: auto; /* Ajusta la altura automáticamente manteniendo la proporción */
+        aspect-ratio: 16 / 9; /* Establece una relación de aspecto */
+        border: 0; /* Elimina el borde predeterminado */
+        
+    }
+}
+
 .btn {
     margin-top: 20px;
 }
-#texto-quienes-somos {
-    margin: 20px;
-    text-align: justify;
 
-}
-
-.btn {
-    margin-top: 20px;
-}
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem

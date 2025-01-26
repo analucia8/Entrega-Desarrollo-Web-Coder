@@ -41,7 +41,7 @@ nav {
 
 .banner-img img {
   height: 100%;
-  width: 100%;
+  width: 100vw;
   object-fit: cover;
   object-position: center;
 }
@@ -175,18 +175,21 @@ body footer {
   color: white;
 }
 
+/* págino quienes somos */
 #texto-quienes-somos {
   margin: 20px;
   text-align: justify;
 }
 
-.btn {
-  margin-top: 20px;
+#contenedor-quienes-somos {
+  justify-content: center;
+  padding-right: 20px;
 }
-
-#texto-quienes-somos {
-  margin: 20px;
-  text-align: justify;
+#contenedor-quienes-somos iframe {
+  width: 100%; /* El iframe se ajustará al ancho del contenedor */
+  height: auto; /* Ajusta la altura automáticamente manteniendo la proporción */
+  aspect-ratio: 16/9; /* Establece una relación de aspecto */
+  border: 0; /* Elimina el borde predeterminado */
 }
 
 .btn {
