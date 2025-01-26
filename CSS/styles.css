@@ -163,6 +163,7 @@ body footer {
   border-top: 2px solid #ccc !important;
   padding-top: 20px !important;
   font-size: 0.75rem !important;
+  padding-left: 20px;
 }
 
 /*pagina productos*/
@@ -183,10 +184,9 @@ body footer {
 
 #contenedor-quienes-somos {
   justify-content: center;
-  padding-right: 20px;
 }
 #contenedor-quienes-somos iframe {
-  width: 100%; /* El iframe se ajustará al ancho del contenedor */
+  width: 80%; /* El iframe se ajustará al ancho del contenedor */
   height: auto; /* Ajusta la altura automáticamente manteniendo la proporción */
   aspect-ratio: 16/9; /* Establece una relación de aspecto */
   border: 0; /* Elimina el borde predeterminado */
@@ -264,7 +264,10 @@ body footer {
 }
 
 /* estilo formulario*/
-.form-floating :hover {
+.form-floating {
+  padding: 10px;
+}
+.form-floating:hover {
   background-color: white;
 }
 
