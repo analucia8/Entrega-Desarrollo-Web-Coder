@@ -1,34 +1,49 @@
-nav {
-    background-color: #004d40; /* Color de fondo del menú */
+/* Estilo personalizado para el navbar */
+.navbar {
+    background-color: #004d40 !important; /* Color de fondo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra debajo del menú */
+  
+    .navbar-brand {
+      font-size: 20px;
+      font-weight: bold;
+      color: $primary-color !important;
+    }
+  
+    .navbar-nav .nav-link {
+      color: $primary-color !important;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 15px;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      justify-content: center;
+  
+      &:hover {
+        background-color: $secondary-color;
+        color: #ffffff !important;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+  
+      &:active {
+        background-color: #00332e;
+      }
+    }
   }
   
-  #listanavegacion {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Espacio entre los elementos */
-    white-space: nowrap;
-     a {
-        color: $primary-color;
-        font-size: 18px;
-        font-weight: bold;
-        padding: 10px 15px;
-        transition: all 0.3s ease; /* Suaviza las transiciones */
-        border-radius: 5px; /* Bordes redondeados */
+  /* Estilo para dispositivos móviles */
+  @media (max-width: 768px) {
+    #listanavegacion {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
   
-            &:hover {
-            background-color: $secondary-color; /* Color al pasar el mouse */
-            color: #ffffff; /* Color del texto al pasar el mouse */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra adicional al pasar el mouse */
+    .navbar-toggler {
+      border: none;
+    }
   }
-
-            &:active {
-                 background-color: #00332e; /* Color al hacer clic */
-  }
-}
-  }
+  
 
   
   /*Estilo imagen del banner*/
@@ -43,17 +58,4 @@ nav {
     object-position: center;
   }
 }
-  /*Estilos para dispositivos móviles lista de navegación*/
-@media (max-width: 840px) {
-    #listanavegacion {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-@media (min-width: 840px) and (max-width: 962px) {
-    #listanavegacion a {
-        font-size: 15px;
-        gap: 10px;
-    }
-}
+  
