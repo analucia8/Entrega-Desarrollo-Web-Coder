@@ -2,17 +2,21 @@
 .contenidoProductosGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-flow: row dense; /* Mantiene el orden en filas densas */
+    grid-auto-flow: row dense;
+    /* Mantiene el orden en filas densas */
     column-gap: 10px;
     row-gap: 20px;
     padding: 0 30px;
-    
+
     img {
         width: 100%;
-        height: 300px; /* Altura fija para las imágenes */
-        object-fit: cover; /* Mantiene proporciones sin deformar */
+        height: 300px;
+        /* Altura fija para las imágenes */
+        object-fit: cover;
+        /* Mantiene proporciones sin deformar */
         display: block;
         border-radius: 10px;
+
         &:hover {
             transform: scale(1.2);
         }
@@ -30,10 +34,11 @@
     line-height: 1.4;
     text-transform: capitalize;
 }
+
 .boton-productos {
-    margin-top: 40px; 
+    margin-top: 40px;
 }
-  
+
 
 /* Diseño para móvil */
 @media (max-width: 768px) {

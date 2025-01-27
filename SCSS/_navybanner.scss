@@ -1,61 +1,62 @@
 /* Estilo personalizado para el navbar */
 .navbar {
-    background-color: #004d40 !important; /* Color de fondo */
+    background-color: #004d40 !important;
+    /* Color de fondo */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
-  
-    .navbar-brand {
-      font-size: 20px;
-      font-weight: bold;
-      color: $primary-color !important;
-    }
-  
-    .navbar-nav .nav-link {
-      color: $primary-color !important;
-      font-size: 18px;
-      font-weight: bold;
-      padding: 10px 15px;
-      transition: all 0.3s ease;
-      border-radius: 5px;
-      justify-content: center;
-  
-      &:hover {
-        background-color: $secondary-color;
-        color: #ffffff !important;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-      }
-  
-      &:active {
-        background-color: #00332e;
-      }
-    }
-  }
-  
-  /* Estilo para dispositivos móviles */
-  @media (max-width: 768px) {
-    #listanavegacion {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-  
-    .navbar-toggler {
-      border: none;
-    }
-  }
-  
 
-  
-  /*Estilo imagen del banner*/
-  .banner-img {
+    .navbar-brand {
+        font-size: 20px;
+        font-weight: bold;
+        color: $primary-color !important;
+    }
+
+    .navbar-nav .nav-link {
+        color: $primary-color !important;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 15px;
+        transition: all 0.3s ease;
+        border-radius: 5px;
+        justify-content: center;
+
+        &:hover {
+            background-color: $secondary-color;
+            color: #ffffff !important;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        &:active {
+            background-color: #00332e;
+        }
+    }
+}
+
+/* Estilo para dispositivos móviles */
+@media (max-width: 768px) {
+    #listanavegacion {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+}
+
+
+
+/*Estilo imagen del banner*/
+.banner-img {
     height: 50vh;
     width: 100vw;
     overflow: hidden;
-        img {
-    height: 100%;
-    width: 100vw;
-    object-fit: cover;
-    object-position: center;
-  }
+
+    img {
+        height: 100%;
+        width: 100vw;
+        object-fit: cover;
+        object-position: center;
+    }
 }
-  
