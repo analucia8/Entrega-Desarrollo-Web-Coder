@@ -47,18 +47,23 @@ body {
     }
 
     p {
-        color: rgb(224, 167, 110)
+        color: rgb(224, 167, 110);
+       
     }
 
     footer {
         color: grey !important;
         margin-top: 40px !important;
         border-top: 2px solid #ccc !important;
-        padding-top: 20px !important;
         font-size: 0.75rem !important;
         padding-left: 20px;
-    }
+        background-color: #00695c !important;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        text-align: center;
+    } 
 }
+
 
 /*pagina productos*/
 .boton-productos {
@@ -73,7 +78,6 @@ body {
 
 /* págino quienes somos */
 #texto-quienes-somos {
-    margin: 20px;
     text-align: justify;
 
 }
@@ -101,10 +105,6 @@ body {
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem
-    }
-
-    footer {
-        text-align: center;
     }
 
     h2 {

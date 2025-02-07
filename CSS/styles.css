@@ -44,12 +44,12 @@
 /*Estilo imagen del banner*/
 .banner-img {
   height: 50vh;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
 .banner-img img {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -174,9 +174,12 @@ body footer {
   color: grey !important;
   margin-top: 40px !important;
   border-top: 2px solid #ccc !important;
-  padding-top: 20px !important;
   font-size: 0.75rem !important;
   padding-left: 20px;
+  background-color: #00695c !important;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 /*pagina productos*/
@@ -191,7 +194,6 @@ body footer {
 
 /* págino quienes somos */
 #texto-quienes-somos {
-  margin: 20px;
   text-align: justify;
 }
 
@@ -216,9 +218,6 @@ body footer {
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
-  }
-  footer {
-    text-align: center;
   }
   h2 {
     font-size: 1.2em;
