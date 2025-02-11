@@ -33,12 +33,8 @@ body {
         font-size: 2.5rem;
         margin-bottom: 40px;
         padding: 10px;
-        text-transform: uppercase;
-        /*Mayúsculas*/
         letter-spacing: 2px;
-        /* Añade espaciado entre letras */
         border-bottom: 2px solid #ccc;
-        /* Línea inferior decorativa */
     }
 
     h2 {
@@ -61,6 +57,7 @@ body {
         padding-top: 40px;
         padding-bottom: 20px;
         text-align: center;
+        width: 100%;
     } 
 }
 
@@ -87,7 +84,6 @@ body {
 
     iframe {
         width: 80%;
-        /* El iframe se ajustará al ancho del contenedor */
         height: auto;
         /* Ajusta la altura automáticamente manteniendo la proporción */
         aspect-ratio: 16 / 9;
@@ -102,10 +98,23 @@ body {
     margin-top: 20px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 400px) and (max-width: 768px) {
     h1 {
-        font-size: 2rem
+        font-size: 2rem !important; 
     }
+}
+
+@media (min-width: 290px) and (max-width: 400px) {
+    h1 {
+        font-size: 1.8rem !important; 
+    }
+}
+@media (max-with:290px) {
+    h1 {
+        font-size: 1.2rem !important;
+    }
+}
+@media (max-width: 768px) {
 
     h2 {
         font-size: 1.2em;
@@ -124,7 +133,7 @@ body {
     display: block;
     /* Asegura que el comportamiento inline-block no interfiera */
     margin: 0 auto;
-    width: 50%;
+    width: 70%;
     border-radius: 10px;
 }
 
@@ -188,4 +197,7 @@ body {
         background-color: white;
 
     }
+}
+.row {
+    margin: 0px;
 }
