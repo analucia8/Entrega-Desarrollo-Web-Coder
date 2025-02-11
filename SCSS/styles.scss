@@ -1,5 +1,5 @@
 $primary-color: antiquewhite;
-$secondary-color: #00695c;
+$secondary-color: #386641;
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'navybanner';
 @import 'productos';
@@ -34,7 +34,7 @@ body {
         margin-bottom: 40px;
         padding: 10px;
         letter-spacing: 2px;
-        border-bottom: 2px solid #ccc;
+        border-bottom: 2px solid #bc4749;
     }
 
     h2 {
@@ -43,22 +43,25 @@ body {
     }
 
     p {
-        color: rgb(224, 167, 110);
+        color: #bc4749;
        
     }
 
     footer {
-        color: grey !important;
+        
         margin-top: 40px !important;
         border-top: 2px solid #ccc !important;
         font-size: 0.75rem !important;
-        padding-left: 20px;
         background-color: #00695c !important;
         padding-top: 40px;
         padding-bottom: 20px;
         text-align: center;
         width: 100%;
+        p {
+            color: $primary-color;
+        }
     } 
+   
 }
 
 
@@ -96,6 +99,16 @@ body {
 
 .btn {
     margin-top: 20px;
+    background-color: #bc4749;
+    border-color: #bc4749;
+    &:hover {
+        transform: scale(1.2);
+        background-color: #bc4749;
+        border-color: #bc4749;
+    }
+}
+.card {
+    border-color: $primary-color;
 }
 
 @media (min-width: 400px) and (max-width: 768px) {
@@ -186,15 +199,18 @@ body {
     /* Garantiza que se ajuste al ancho disponible */
     margin: auto;
     /* Centra el formulario si es necesario */
-    background-color: rgba(240, 248, 255, 0.909);
+    background-color: $primary-color;
+    color: #bc4749;
 }
 
 .form-floating {
     padding: 10px;
+    color: #bc4749;
 
 
     &:hover {
-        background-color: white;
+        background-color: #bc4749;
+    
 
     }
 }

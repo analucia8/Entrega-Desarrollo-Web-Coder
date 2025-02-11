@@ -21,7 +21,7 @@
   justify-content: center;
 }
 .navbar .navbar-nav .nav-link:hover {
-  background-color: #00695c;
+  background-color: #386641;
   color: #ffffff !important;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -80,9 +80,9 @@
 .itemGridProductos h2 {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #333;
+  color: #386641;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 60px;
   padding: 5px;
   line-height: 1.4;
   text-transform: capitalize;
@@ -150,32 +150,33 @@ body .estilos-titulos, body h2, body h1 {
   font-weight: bold;
   text-align: center;
   margin-top: 30px;
-  color: #00695c !important;
+  color: #386641 !important;
 }
 body h1 {
   font-size: 2.5rem;
   margin-bottom: 40px;
   padding: 10px;
   letter-spacing: 2px;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #bc4749;
 }
 body h2 {
   margin-bottom: 20px;
 }
 body p {
-  color: rgb(224, 167, 110);
+  color: #bc4749;
 }
 body footer {
-  color: grey !important;
   margin-top: 40px !important;
   border-top: 2px solid #ccc !important;
   font-size: 0.75rem !important;
-  padding-left: 20px;
   background-color: #00695c !important;
   padding-top: 40px;
   padding-bottom: 20px;
   text-align: center;
   width: 100%;
+}
+body footer p {
+  color: antiquewhite;
 }
 
 /*pagina productos*/
@@ -208,6 +209,17 @@ body footer {
 
 .btn {
   margin-top: 20px;
+  background-color: #bc4749;
+  border-color: #bc4749;
+}
+.btn:hover {
+  transform: scale(1.2);
+  background-color: #bc4749;
+  border-color: #bc4749;
+}
+
+.card {
+  border-color: antiquewhite;
 }
 
 @media (min-width: 400px) and (max-width: 768px) {
@@ -288,14 +300,16 @@ body footer {
   /* Garantiza que se ajuste al ancho disponible */
   margin: auto;
   /* Centra el formulario si es necesario */
-  background-color: rgba(240, 248, 255, 0.909);
+  background-color: antiquewhite;
+  color: #bc4749;
 }
 
 .form-floating {
   padding: 10px;
+  color: #bc4749;
 }
 .form-floating:hover {
-  background-color: white;
+  background-color: #bc4749;
 }
 
 .row {
