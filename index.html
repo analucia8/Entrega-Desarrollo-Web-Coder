@@ -145,26 +145,27 @@
 
     <h2>Hablá con nosotros</h2>
     <div>
-      <div class="form-floating mb-3">
-        <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com">
-        <label for="floatingInputDisabled">Tu nombre</label>
-      </div>
-      <div class="form-floating mb-3">
-        <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com">
-        <label for="floatingInputDisabled">Tu correo electrónico</label>
-      </div>
-      <div class="form-floating mb-3">
-        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled"></textarea>
-        <label for="floatingTextareaDisabled">Tu mensaje </label>
-      </div>
-
-      <div class="form-floating">
+      <div id="form-comprar-o-vender" class="form-floating" >
         <select class="form-select" id="floatingSelectDisabled" aria-label="Floating label disabled select example">
           <option selected>¿Comprar o vender?</option>
           <option value="1">Comprar</option>
           <option value="2">Vender</option>
         </select>
         <label for="floatingSelectDisabled">¿Qué deseas hacer?</label>
+      </div>
+      <div class="row">
+         <div class="form-floating mb-3 col-md-6">
+            <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com">
+            <label for="floatingInputDisabled">Tu nombre</label>
+        </div>
+        <div class="form-floating mb-3 col-md-6">
+            <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com">
+            <label for="floatingInputDisabled">Tu correo electrónico</label>
+        </div>
+      </div>
+      <div class="form-floating mb-3">
+        <textarea style="height: 150px;" class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled"></textarea>
+        <label for="floatingTextareaDisabled">Tu mensaje </label>
       </div>
       <div><label for="submit"></label>
         <input type="submit" value="enviar" class="btn btn-primary">

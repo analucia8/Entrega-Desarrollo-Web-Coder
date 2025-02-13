@@ -1,5 +1,5 @@
 $primary-color: antiquewhite;
-$secondary-color: #386641;
+$secondary-color: #004d40 ;
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'navybanner';
 @import 'productos';
@@ -44,6 +44,8 @@ body {
 
     p {
         color: #bc4749;
+        padding-left: 20px;
+        padding-right: 20px;
        
     }
 
@@ -52,7 +54,7 @@ body {
         margin-top: 40px !important;
         border-top: 2px solid #ccc !important;
         font-size: 0.75rem !important;
-        background-color: #00695c !important;
+        background-color: $secondary-color !important;
         padding-top: 40px;
         padding-bottom: 20px;
         text-align: center;
@@ -136,6 +138,9 @@ body {
     p {
         font-size: 1em;
     }
+    #form-comprar-o-vender {
+        width: 100%;
+    }
 }
 
 #p-carrusel {
@@ -208,10 +213,19 @@ body {
     color: #bc4749;
 
 
+
     &:hover {
         background-color: #bc4749;
     
 
+    }
+}
+#form-comprar-o-vender{
+    width: 50%;
+} 
+@media (max-width: 768px) {
+    #form-comprar-o-vender {
+        width: 100%;
     }
 }
 .row {
