@@ -1,26 +1,25 @@
-
 @mixin texto-estandar($color, $margen) {
     color: $color;
     margin: $margen;
     font-size: 16px;
     line-height: 1.5;
     text-align: justify;
-    
+
 }
 
 .estilo-terminos-y-condiciones {
 
     p {
         @include texto-estandar(rgb(224, 167, 110), 10px 0);
-      
+
     }
 
     // Estilos para los elementos de lista
     li {
-        @include texto-estandar(gray, 20px 0); // Letra gris y margen más amplio
-        list-style-position: inside; /* Asegura que los números estén dentro del contenedor */
+        @include texto-estandar(gray, 20px 0); 
+        list-style-position: inside;  /* Asegura que los números estén dentro del contenedor */
         padding-left: 30px;
         padding-right: 30px;
-      
+
     }
 }

@@ -64,7 +64,7 @@
 }
 .contenidoProductosGrid img {
   width: 100%;
-  height: 300px; /* Altura fija para las imágenes */
+  height: 300px;
   object-fit: cover; /* Mantiene proporciones sin deformar */
   display: block;
   border-radius: 10px;
@@ -198,11 +198,8 @@ body footer p {
 #contenedor-quienes-somos iframe {
   width: 80%;
   height: auto;
-  /* Ajusta la altura automáticamente manteniendo la proporción */
   aspect-ratio: 16/9;
-  /* Establece una relación de aspecto */
   border: 0;
-  /* Elimina el borde predeterminado */
 }
 
 .btn {
@@ -252,7 +249,6 @@ body footer p {
 
 .carousel-item img {
   display: block;
-  /* Asegura que el comportamiento inline-block no interfiera */
   margin: 0 auto;
   width: 70%;
   border-radius: 10px;
@@ -295,12 +291,9 @@ body footer p {
 /* estilo formulario*/
 .form-control,
 .form-select {
-  max-width: 100%;
-  /* Asegura que no desborde el contenedor */
+  max-width: 100%; /* Asegura que no desborde el contenedor */
   width: 100%;
-  /* Garantiza que se ajuste al ancho disponible */
   margin: auto;
-  /* Centra el formulario si es necesario */
   background-color: antiquewhite;
   color: #bc4749;
 }
